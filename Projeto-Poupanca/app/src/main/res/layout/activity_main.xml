@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <!-- Barra de Título Superior (Rosa) -->
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#E87A90"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="Poupança"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Logo do Porquinho Rosa -->
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="220dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"
+                android:contentDescription="Poupa Fácil Logo"
+                android:src="@drawable/logo_porquinho_rosa" />
+
+            <!-- Valor Inicial -->
+            <TextView
+                android:id="@+id/tvValorInicial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valor Inicial:"
+                android:textColor="#333333"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etValorInicial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#E87A90"
+                android:hint="Valor em R$. Ex: 1700.00"
+                android:inputType="numberDecimal"
+                android:textColorHint="#C0A0A8"
+                android:textSize="15sp" />
+
+            <!-- Aplicação Mensal -->
+            <TextView
+                android:id="@+id/tvAplicacaoMensal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aplicação mensal"
+                android:textColor="#333333"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etAplicacaoMensal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#E87A90"
+                android:hint="Ex: 100.00"
+                android:inputType="numberDecimal"
+                android:textColorHint="#C0A0A8"
+                android:textSize="15sp" />
+
+            <!-- Tempo da Aplicação -->
+            <TextView
+                android:id="@+id/tvTempoAplicacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tempo da aplicação"
+                android:textColor="#333333"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etTempoAplicacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#E87A90"
+                android:hint="Em meses"
+                android:inputType="number"
+                android:textColorHint="#C0A0A8"
+                android:textSize="15sp" />
+
+            <!-- Taxa -->
+            <TextView
+                android:id="@+id/tvTaxa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Taxa"
+                android:textColor="#333333"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etTaxa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="28dp"
+                android:backgroundTint="#E87A90"
+                android:hint="Ex: 0.02"
+                android:inputType="numberDecimal"
+                android:textColorHint="#C0A0A8"
+                android:textSize="15sp" />
+
+            <!-- Botão Calcular Rosa -->
+            <Button
+                android:id="@+id/btnCalcular"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:backgroundTint="#E87A90"
+                android:text="Calcular"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
